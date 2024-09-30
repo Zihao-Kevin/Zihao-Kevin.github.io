@@ -1,5 +1,5 @@
 baseURL = "https://www.zihaozhao.site/blogs"
-title = "ExampleSite"
+title = "Zihao's Blogs"
 theme = "PaperMod"
 
 enableRobotsTXT = true
