@@ -1,36 +1,72 @@
-# This is a basic workflow to help you get started with Actions
+name: Deploy Personal Website and Hugo Blog to GitHub Pages
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
+  # Runs on pushes targeting the default branch
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  # Build job for Hugo blog
+  build_blog:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      HUGO_VERSION: 0.134.2
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install Hugo CLI
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Build Hugo Blog
+        working-directory: ./blogs
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Los_Angeles
+        run: |
+          hugo --gc --minify --destination ../public/blogs
+      - name: Upload Hugo Blog artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public/blogs
+
+  # Build and deploy personal website
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    needs: build_blog
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy Personal Website Files
+        run: cp -r ./public .
+
+      - name: Download Blog Artifact
+        uses: actions/download-pages-artifact@v1
+
+      - name: Deploy both website and blog
+        uses: actions/deploy-pages@v4
