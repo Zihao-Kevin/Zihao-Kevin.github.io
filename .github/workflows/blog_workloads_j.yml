@@ -57,11 +57,11 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --config hugo.toml --themesDir ./themes
+          hugo --gc --minify --config hugo.toml --themesDir ./themes --destination ./hugo_public
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./blogs/public
+          path: ./blogs/hugo_public
 
   # Deployment job
   deploy:
