@@ -78,5 +78,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with: 
-          path: ./blogs/hugo_public
+        # with: 
+        #   path: ./blogs/hugo_public
