@@ -57,7 +57,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --config hugo.toml --themesDir ./themes --destination ./hugo_public
+          hugo --gc --minify --baseURL "http://www.zihaozhao.site/blogs/" --config hugo.toml --themesDir ./themes --destination ./hugo_public
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -71,12 +71,11 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "http://www.zihaozhao.site/blogs/"
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        # with: 
-        #   path: ./blogs/hugo_public
+
