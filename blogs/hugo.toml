@@ -1,7 +1,9 @@
-baseURL = "https://www.zihaozhao.site/blogs"
+baseURL = "https://www.zihaozhao.site/blogs/"
 title = "Zihao's Blogs"
 theme = "PaperMod"
-publishDir = "docs"
+publishDir = "public"
+relativeURLs = false
+uglyURLs = false
 
 enableRobotsTXT = true
 buildDrafts = false
