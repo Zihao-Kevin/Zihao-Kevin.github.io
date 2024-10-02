@@ -64,8 +64,8 @@ jobs:
       #     path: ./blogs/hugo_public
       - name: Move generated files to blogs folder
         run: |
-          mkdir -p ./public/blogs
-          mv ./blogs/public/* ./public/blogs/
+          mkdir -p ./hugo_public/blogs
+          mv ./blogs/hugo_public/* ./hugo_public/blogs/
 
   # Deployment job
   deploy:
@@ -91,4 +91,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          path: ./public
+          path: ./hugo_public
