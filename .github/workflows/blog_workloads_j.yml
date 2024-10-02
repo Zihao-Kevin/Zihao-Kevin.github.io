@@ -58,19 +58,37 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           hugo --gc --minify --config hugo.toml --themesDir ./themes --destination ./hugo_public
-      - name: Upload Hugo Blog artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./blogs/hugo_public
+      # - name: Upload Hugo Blog artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: ./blogs/hugo_public
+      - name: Move generated files to blogs folder
+        run: |
+          mkdir -p ./public/blogs
+          mv ./blogs/public/* ./public/blogs/
 
   # Deployment job
   deploy:
+    # environment:
+    #   name: github-pages
+    #   url: https://zihaozhao.site/blogs
+    # runs-on: ubuntu-latest
+    # needs: build
+    # steps:
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
+    runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: https://zihaozhao.site/blogs
-    runs-on: ubuntu-latest
-    needs: build
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          path: ./public
