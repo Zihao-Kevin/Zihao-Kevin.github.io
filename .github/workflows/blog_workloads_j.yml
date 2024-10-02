@@ -58,14 +58,14 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           hugo --gc --minify --config hugo.toml --themesDir ./themes --destination ./hugo_public
-      # - name: Upload Hugo Blog artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./blogs/hugo_public
-      - name: Move generated files to blogs folder
-        run: |
-          mkdir -p ./hugo_public/blogs
-          mv ./blogs/hugo_public/* ./hugo_public/blogs/
+      - name: Upload Hugo Blog artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./blogs/hugo_public
+      # - name: Move generated files to blogs folder
+      #   run: |
+      #     mkdir -p ./hugo_public/blogs
+      #     mv ./blogs/hugo_public/* ./hugo_public/blogs/
 
   # Deployment job
   deploy:
