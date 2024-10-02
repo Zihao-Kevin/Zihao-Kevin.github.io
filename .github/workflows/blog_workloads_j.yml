@@ -84,9 +84,6 @@ jobs:
       name: github-pages
       url: https://zihaozhao.site/blogs
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
