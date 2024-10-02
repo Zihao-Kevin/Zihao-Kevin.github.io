@@ -47,7 +47,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --destination ../public/blogs
+          hugo --gc --minify --destination ../public/blogs --config ./blogs/hugo.toml
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
