@@ -51,12 +51,13 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
+        working-directory: ./blogs
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --destination ../../blogs --config ../../blogs/hugo.toml
+          hugo --gc --minify --config hugo.toml --themesDir ./themes
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
