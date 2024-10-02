@@ -57,7 +57,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --baseURL "http://www.zihaozhao.site/blogs/" --config hugo.toml --themesDir ./themes --destination ./hugo_public
+          hugo --gc --minify --config hugo.toml --baseURL "http://www.zihaozhao.site/blogs/" --themesDir ./themes --destination ./hugo_public
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
