@@ -57,15 +57,15 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --config hugo.toml --baseURL "http://www.zihaozhao.site/blogs/" --themesDir ./themes --destination ./hugo_public
+          hugo --gc --minify --config hugo.toml --baseURL "http://www.zihaozhao.site/blogs/" --themesDir ./themes --destination ./public
       - name: Upload Hugo Blog artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./blogs/hugo_public
+          path: ./blogs/public
       # - name: Move generated files to blogs folder
       #   run: |
-      #     mkdir -p ./hugo_public/blogs
-      #     mv ./blogs/hugo_public/* ./hugo_public/blogs/
+      #     mkdir -p ./public/blogs
+      #     mv ./blogs/public/* ./public/blogs/
 
   # Deployment job
   deploy:
