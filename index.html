@@ -1,339 +1,533 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 
-  <title>Zihao Zhao</title>
-  
-  <meta name="author" content="Zihao Zhao">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Zihao Zhao</title>
+
+    <meta name="author" content="Zihao Zhao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <!-- MathJax: render LaTeX math in $...$ -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 
 <style>
-  .red-text {
-    color: red;
-  }
+    .red-text {
+        color: red;
+    }
 </style>
 
 <style>
-  .green-text {
-    color: green;
-  }
+    .green-text {
+        color: green;
+    }
 </style>
- 
+
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Zihao Zhao </name>
-              </p>
-              <p>I am currently a first-year Ph.D. student at the School of Computer Science at Georgia Institute of Technology starting Fall 2024.
-              </p>
-              <p>My research interests lie primarily in machine learning, optimization, and generalization. Currently, I mainly study the following topics: <b>machine learning</b>, <b>active learning</b>, and their <b>generalization analysis</b>. 
-              </p>
+    <table
+        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p style="text-align:center">
+                                        <name>Zihao Zhao </name>
+                                    </p>
+                                    <p>I am currently a second-year Ph.D. student in the School of Computer Science and
+                                        Engineering at Georgia Institute of Technology. I am very fortunate to be
+                                        advised by <a href="https://guaguakai.com/">Kai Wang</a>.
+                                    </p>
+                                    <p>My research interests lie primarily in machine learning, optimization, and
+                                        AI for social impact. Currently, I mainly study on topics related to bilevel
+                                        optimization and decision-focused learning.
+                                    </p>
 
-              <p style="text-align:center">
-                <a href="mailto:zzhao628@gatech.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Zhao_Zihao_CV_Dec15.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=825UyCgAAAAJ/">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/Zihao-Kevin/">Github</a> &nbsp/&nbsp
-                <a href="https://www.zihaozhao.site/blogs/">Blogs</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/ZihaoZhao.JPG"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ZihaoZhao.JPG" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				
-          <tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/AQUILA_eq2.jpg' width="160"></div>
-                <img src='images/AQUILA_eq2.jpg' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10319317">
-                <papertitle>AQUILA: Communication Efficient Federated Learning with Adaptive Quantization in Device Selection Strategy</papertitle> 
-              </a>
-              <a href="https://github.com/Zihao-Kevin/AQUILA"><strong class="green-text">[Code]</strong></a>
-              <br>
-              <strong>Zihao Zhao</strong>, Yuzhu Mao, Zhenpeng Shi, Yang Liu, Tian Lan, Wenbo Ding, Xiao-Ping Zhang
-              <br>
-              IEEE Transactions on Mobile Computing (<strong>TMC</strong>), 2023.
-              <br>
-              <p></p>
-              <p>
-              We craft an optimization problem to minimize the impact of skipped client updates, then derive an optimal quantization precision strategy, demonstrating comparable model performance with a <strong>60.4% communication costs reduction</strong> on both IID and non-IID scenarios.
-              </p>
-            </td>
-          </tr>         
-  
-          <tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/Fedpb_eq2.jpg' width="160"></div>
-                <img src='images/Fedpb_eq2.jpg' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2309.06683/">
-                <papertitle>Federated PAC-Bayesian Learning on Non-IID Data</papertitle>
-              </a>
-              <a href="https://github.com/Zihao-Kevin/PAC-Bayes-Federated-Learning-framework"><strong class="green-text">[Code]</strong></a>
-              <br>
-              <strong>Zihao Zhao</strong>,Yang Liu, Wenbo Ding, Xiao-Ping Zhang
-              <br>
-             Accepted by IEEE International Conference on Acoustics, Speech and Signal Processing (<strong>ICASSP</strong>), 2024.             
-              <br>
-              <p></p>
-              <p>
-              We introduce a non-vacuous federated PAC-Bayesian generalization error bound tailored for <strong>non-IID local data</strong>, and presented an innovative Gibbs-based algorithm for its optimization. Tightness of the bound has been validated by real-world datasets.
-              </p>
-            </td>
-          </tr>
+                                    <p style="text-align:center">
+                                        <a href="mailto:zzhao628@gatech.edu">Email</a> &nbsp/&nbsp
+                                        <a href="data/Zhao_Zihao_CV_Dec15.pdf">CV</a> &nbsp/&nbsp
+                                        <a href="https://scholar.google.com/citations?user=825UyCgAAAAJ/">Google
+                                            Scholar</a> &nbsp/&nbsp
+                                        <a href="https://github.com/Zihao-Kevin/">Github</a> &nbsp/&nbsp
+                                        <a href="https://www.zihaozhao.site/blogs/">Blogs</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%">
+                                    <a href="images/ZihaoZhao.JPG"><img style="width:100%;max-width:100%"
+                                            alt="profile photo" src="images/ZihaoZhao.JPG" class="hoverZoomLink"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>Publications during PhD</heading>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
 
-  <tr onmouseout="prompt_stop()" onmouseover="prompt_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='mira_image'>
-          <img src='images/ATPFL_final.jpg' width="160"></div>
-        <img src='images/ATPFL_final.jpg' width="160">
-      </div>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://dl.acm.org/doi/10.1145/3594739.3612914">
-        <papertitle>Inclusive Data Representation in Federated Learning: A Novel Approach Integrating Textual and Visual Prompt</papertitle>
-      </a>
-      <a href="https://github.com/Zihao-Kevin/Twin_prompt"><strong class="green-text">[Code]</strong></a>
-      <br>
-      <strong>Zihao Zhao</strong>, Zhenpeng Shi, Yang Liu, Wenbo Ding
-      <br>
-      Proceedings of the 2023 ACM International Joint Conference on Pervasive and Ubiquitous Computing & the 2023 ACM International Symposium on Wearable Computing (<strong>UbiComp-CPD</strong>), 2023.  <strong class="red-text">Oral presentation, Best Paper Runner-Up Award 🏆</strong>.
-      <br>
-      <p></p>
-      <p>
-      We develop a twin prompt tuning algorithm -- integrating both <strong> visual and textual </strong> modalities, enhance the data representation, and achieve superior performance over all baseline models in <strong>7 datasets</strong>.
-      </p>
-    </td>
-  </tr>	
+                            <tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/bilevel_framework.png' width="160">
+                                        </div>
+                                        <img src='images/bilevel_framework.png' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/2512.02494">
+                                        <papertitle>A Fully First-Order Layer for Differentiable Optimization
+                                        </papertitle>
+                                    </a>
+                                    <a href="https://github.com/GT-KOALA/FFOLayer"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>*, Kai-Chia Mo*, Shing-Hei Ho, Brandon Amos, Kai Wang
+                                    <br>
+                                    arXv preprint.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We introduce an active-set Lagrangian hypergradient oracle that avoids Hessian
+                                        evaluations and provides finite-time,
+                                        non-asymptotic approximation guarantees. We show that an approximate
+                                        hypergradient can be computed using only
+                                        first-order information in $\tilde{\mathcal{O}}(1)$ time, leading to an overall
+                                        complexity of
+                                        $\tilde{\mathcal{O}}(\delta^{-1}\epsilon^{-3})$ for constrained bilevel
+                                        optimization,
+                                        which matches the best known rate for
+                                        non-smooth non-convex optimization.
+                                    </p>
+                                </td>
 
-  <tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='mira_image'>
-          <img src='images/leakage.jpg' width="160"></div>
-        <img src='images/leakage.jpg' width="160">
-      </div>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://openreview.net/forum?id=S8MPHInGqj/">
-        <papertitle>Deep Leakage from Model in Federated Learning</papertitle>
-      </a>
-      <a href="https://github.com/Zihao-Kevin/DLM"><strong class="green-text">[Code]</strong></a>
-      <br>
-      <strong>Zihao Zhao</strong>, Mengen Luo, Wenbo Ding.
-      <br>
-      Conference on Parsimony and Learning (<strong>CPAL</strong>), 2024. <strong class="red-text">Oral presentation</strong>.
-      <br>
-      Also on IEEE East Asian School of Information Theory (<strong>EASIT</strong>), 2022.
-      <br>
-      <p></p>
-      <p>
-        We introduce a model-based attack to recovery privacy data of users using a novel matrix Frobenius norm loss functions, achieving <strong> 92% recovery accuracy</strong> and <strong>32% higher</strong> than gradient-based attacks.
-      </p>
-    </td>
-  </tr>	
+                            <tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/diffusion_dfl_figure.png' width="160">
+                                        </div>
+                                        <img src='images/diffusion_dfl_figure.png' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://openreview.net/forum?id=uhv3f80jmG">
+                                        <papertitle>Diffusion-DFL: Decision-focused Diffusion Models for Stochastic
+                                            Optimization</papertitle>
+                                    </a>
+                                    <a href="https://github.com/GT-KOALA/Diffusion_DFL"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>, Christopher Yeh, Lingkai Kong, Kai Wang
+                                    <br>
+                                    International Conference on Learning Representations (<strong>ICLR</strong>), 2026.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We propose the first diffusion-based DFL approach for stochastic optimization,
+                                        which trains a diffusion model to capture complex uncertainty in problem
+                                        parameters. We develop
+                                        two end-to-end training techniques to integrate the diffusion model into
+                                        decision-making: reparameterization and score
+                                        function approximation.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-  <tr onmouseout="safari_stop()" onmouseover="safari_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='mira_image'>
-          <img src='images/SAFARI.jpg' width="160"></div>
-        <img src='images/SAFARI.jpg' width="160">
-      </div>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10185584/">
-        <papertitle>SAFARI: Sparsity-Enabled Federated Learning with Limited and Unreliable Communications</papertitle>
-      </a>
-      <a href="https://github.com/Zihao-Kevin/SAFARI"><strong class="green-text">[Code]</strong></a>
-      <br>
-      Yuzhu Mao*, <strong>Zihao Zhao*</strong>, Meilin Yang, Le Liang, Yang Liu, Wenbo Ding, Tian Lan, Xiao-Ping Zhang
-      <br>
-      IEEE Transactions on Mobile Computing (<strong>TMC</strong>), 2023.
-      <br>
-      <p></p>
-      <p>
-      We develop a sparsity-enabled framework that employs a client similarity matrix to address unreliable communications, ensuring federated learning convergence even with even with <strong>60% weight pruning</strong> and <strong>80% client update loss</strong>.
-      </p>
-    </td>
-  </tr>	
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <heading>Publications before PhD</heading>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
 
-  <tr onmouseout="review_stop()" onmouseover="review_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='mira_image'>
-          <img src='images/Review.jpg' width="160"></div>
-        <img src='images/Review.jpg' width="160">
-      </div>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0016003222009346/">
-        <papertitle>Towards Efficient Communications in Federated Learning: A Contemporary Survey</papertitle>
-      </a>
-      <br>
-      <strong>Zihao Zhao</strong>, Yuzhu Mao, Yang Liu, Linqi Song, Ye Ouyang, Xinlei Chen, Wenbo Ding
-      <br>
-      Journal of the Franklin Institute, 2023.
-      <br>
-      <p></p>
-      <p>
-      We comprehensively review the challenges and advancements in <strong>communications of federated learning</strong>, highlight improvements in communication efficiency, environment, and resource allocation, and forecast future research directions on communication-efficient FL algorithms.
-      </p>
-    </td>
-  </tr>	
+                            <tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/Fedpb_eq2.jpg' width="160">
+                                        </div>
+                                        <img src='images/Fedpb_eq2.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2309.06683/">
+                                        <papertitle>Federated PAC-Bayesian Learning on Non-IID Data</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/PAC-Bayes-Federated-Learning-framework"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>,Yang Liu, Wenbo Ding, Xiao-Ping Zhang
+                                    <br>
+                                    Accepted by IEEE International Conference on Acoustics, Speech and Signal Processing
+                                    (<strong>ICASSP</strong>), 2024.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We introduce a non-vacuous federated PAC-Bayesian generalization error bound
+                                        tailored for <strong>non-IID local data</strong>, and presented an innovative
+                                        Gibbs-based algorithm for its optimization. Tightness of the bound has been
+                                        validated by real-world datasets.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/AQUILA_eq2.jpg' width="160">
+                                        </div>
+                                        <img src='images/AQUILA_eq2.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://ieeexplore.ieee.org/document/10319317">
+                                        <papertitle>AQUILA: Communication Efficient Federated Learning with Adaptive
+                                            Quantization in Device Selection Strategy</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/AQUILA"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>, Yuzhu Mao, Zhenpeng Shi, Yang Liu, Tian Lan, Wenbo
+                                    Ding, Xiao-Ping Zhang
+                                    <br>
+                                    IEEE Transactions on Mobile Computing (<strong>TMC</strong>), 2023.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We craft an optimization problem to minimize the impact of skipped client
+                                        updates, then derive an optimal quantization precision strategy, demonstrating
+                                        comparable model performance with a <strong>60.4% communication costs
+                                            reduction</strong> on both IID and non-IID scenarios.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="prompt_stop()" onmouseover="prompt_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/ATPFL_final.jpg' width="160">
+                                        </div>
+                                        <img src='images/ATPFL_final.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://dl.acm.org/doi/10.1145/3594739.3612914">
+                                        <papertitle>Inclusive Data Representation in Federated Learning: A Novel
+                                            Approach Integrating Textual and Visual Prompt</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/Twin_prompt"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>, Zhenpeng Shi, Yang Liu, Wenbo Ding
+                                    <br>
+                                    Proceedings of the 2023 ACM International Joint Conference on Pervasive and
+                                    Ubiquitous Computing & the 2023 ACM International Symposium on Wearable Computing
+                                    (<strong>UbiComp-CPD</strong>), 2023. <strong class="red-text">Oral presentation,
+                                        Best Paper Runner-Up Award 🏆</strong>.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We develop a twin prompt tuning algorithm -- integrating both <strong> visual
+                                            and textual </strong> modalities, enhance the data representation, and
+                                        achieve superior performance over all baseline models in <strong>7
+                                            datasets</strong>.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/leakage.jpg' width="160">
+                                        </div>
+                                        <img src='images/leakage.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://openreview.net/forum?id=S8MPHInGqj/">
+                                        <papertitle>Deep Leakage from Model in Federated Learning</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/DLM"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>, Mengen Luo, Wenbo Ding.
+                                    <br>
+                                    Conference on Parsimony and Learning (<strong>CPAL</strong>), 2024. <strong
+                                        class="red-text">Oral presentation</strong>.
+                                    <br>
+                                    Also on IEEE East Asian School of Information Theory (<strong>EASIT</strong>), 2022.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We introduce a model-based attack to recovery privacy data of users using a
+                                        novel matrix Frobenius norm loss functions, achieving <strong> 92% recovery
+                                            accuracy</strong> and <strong>32% higher</strong> than gradient-based
+                                        attacks.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="safari_stop()" onmouseover="safari_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/SAFARI.jpg' width="160">
+                                        </div>
+                                        <img src='images/SAFARI.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/10185584/">
+                                        <papertitle>SAFARI: Sparsity-Enabled Federated Learning with Limited and
+                                            Unreliable Communications</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/SAFARI"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    Yuzhu Mao*, <strong>Zihao Zhao*</strong>, Meilin Yang, Le Liang, Yang Liu, Wenbo
+                                    Ding, Tian Lan, Xiao-Ping Zhang
+                                    <br>
+                                    IEEE Transactions on Mobile Computing (<strong>TMC</strong>), 2023.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We develop a sparsity-enabled framework that employs a client similarity matrix
+                                        to address unreliable communications, ensuring federated learning convergence
+                                        even with even with <strong>60% weight pruning</strong> and <strong>80% client
+                                            update loss</strong>.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="review_stop()" onmouseover="review_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/Review.jpg' width="160">
+                                        </div>
+                                        <img src='images/Review.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0016003222009346/">
+                                        <papertitle>Towards Efficient Communications in Federated Learning: A
+                                            Contemporary Survey</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Zihao Zhao</strong>, Yuzhu Mao, Yang Liu, Linqi Song, Ye Ouyang, Xinlei
+                                    Chen, Wenbo Ding
+                                    <br>
+                                    Journal of the Franklin Institute, 2023.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We comprehensively review the challenges and advancements in
+                                        <strong>communications of federated learning</strong>, highlight improvements in
+                                        communication efficiency, environment, and resource allocation, and forecast
+                                        future research directions on communication-efficient FL algorithms.
+                                    </p>
+                                </td>
+                            </tr>
 
 
-<tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='mira_image'>
-        <img src='images/FedAQG3.jpg' width="160"></div>
-      <img src='images/FedAQG3.jpg' width="160">
-    </div>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://dl.acm.org/doi/full/10.1145/3510587/">
-      <papertitle>Communication-Efficient Federated Learning with Adaptive Quantization</papertitle> 
-    </a>
-    <a href="https://github.com/Zihao-Kevin/AQUILA"><strong class="green-text">[Code]</strong></a>
-    <br>
-    Yuzhu Mao, <strong>Zihao Zhao</strong>, Guangfeng Yan, Yang Liu, Tian Lan, Linqi Song, Wenbo Ding
-    <br>
-    ACM Transactions on Intelligent Systems and Technology (<strong>TIST</strong>), 2022.
-    <br>
-    <p></p>
-    <p>
-    We adjust the quantization precision for optimal precision by brute-force searching, allow a <strong>25%-50% decrease</strong> in transmission compared to existing methods, and demonstrated resilience to up to 90% client dropout rates.
-    </p>
-  </td>
-</tr>
-		
+                            <tr onmouseout="fedavg_stop()" onmouseover="fedavg_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/FedAQG3.jpg' width="160">
+                                        </div>
+                                        <img src='images/FedAQG3.jpg' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://dl.acm.org/doi/full/10.1145/3510587/">
+                                        <papertitle>Communication-Efficient Federated Learning with Adaptive
+                                            Quantization</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/AQUILA"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    Yuzhu Mao, <strong>Zihao Zhao</strong>, Guangfeng Yan, Yang Liu, Tian Lan, Linqi
+                                    Song, Wenbo Ding
+                                    <br>
+                                    ACM Transactions on Intelligent Systems and Technology (<strong>TIST</strong>),
+                                    2022.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We adjust the quantization precision for optimal precision by brute-force
+                                        searching, allow a <strong>25%-50% decrease</strong> in transmission compared to
+                                        existing methods, and demonstrated resilience to up to 90% client dropout rates.
+                                    </p>
+                                </td>
+                            </tr>
 
-<tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='mira_image'>
-        <img src='images/magleak.png' width="160"></div>
-      <img src='images/magleak.png' width="160">
-    </div>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://ieeexplore.ieee.org/abstract/document/9298946/">
-      <papertitle>MAGLeak: A Learning-based Side-channel Attack for Password Recognition with Multiple Sensors in IIoT Environment</papertitle> 
-    </a>
-    <a href="https://github.com/Zihao-Kevin/Polar_Code_Secure_APP"><strong class="green-text">[Code]</strong></a>
-    <br>
-    Dajiang Chen*, <strong>Zihao Zhao*</strong>, Xue Qin, Yaohua Luo, Mingsheng Cao, Hua Xu, Anfeng Liu
-    <br>
-    IEEE Transactions on Industrial Informatics (<strong>TII</strong>), 2020.
-    <br>
-    <p></p>
-    <p>
-    We develop a side-channel-based password recognition system utilizing the 3 types of smartphone sensors for password detection, surpassing previous methods with up to <strong>98% accuracy</strong> on limited training data.
-    </p>
-  </td>
-</tr>	
 
-  </tbody></table>
+                            <tr onmouseout="dlm_stop()" onmouseover="dlm_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='mira_image'>
+                                            <img src='images/magleak.png' width="160">
+                                        </div>
+                                        <img src='images/magleak.png' width="160">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/9298946/">
+                                        <papertitle>MAGLeak: A Learning-based Side-channel Attack for Password
+                                            Recognition with Multiple Sensors in IIoT Environment</papertitle>
+                                    </a>
+                                    <a href="https://github.com/Zihao-Kevin/Polar_Code_Secure_APP"><strong
+                                            class="green-text">[Code]</strong></a>
+                                    <br>
+                                    Dajiang Chen*, <strong>Zihao Zhao*</strong>, Xue Qin, Yaohua Luo, Mingsheng Cao, Hua
+                                    Xu, Anfeng Liu
+                                    <br>
+                                    IEEE Transactions on Industrial Informatics (<strong>TII</strong>), 2020.
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        We develop a side-channel-based password recognition system utilizing the 3
+                                        types of smartphone sensors for password detection, surpassing previous methods
+                                        with up to <strong>98% accuracy</strong> on limited training data.
+                                    </p>
+                                </td>
+                            </tr>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-  <tr>
-    <td>
-      <heading>Education</heading>
-    </td>
-  </tr>
-  </tbody></table>
+                        </tbody>
+                    </table>
 
-  <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <heading>Education</heading>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <tr>
-      <td style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
-        <img src="images/GT_logo.png" width="70">
-      </td>
-      <td width="75%" valign="center">
-        <p><strong>Aug. 2024 - Present, <a href="https://www.gatech.edu/"> <i>Georgia Institute of Technology</i></strong></a></p>
-        <p> PhD, Computer Science </p>
-      </td>
-    </tr>
+                    <table width="100%" align="center" border="0" cellpadding="20">
+                        <tbody>
 
-  <tr>
-    <td style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
-      <img src="images/tsinghua.png" width="70">
-    </td>
-    <td width="75%" valign="center">
-      <p><strong>Aug. 2021 - June. 2024, <a href="https://www.tsinghua.edu.cn/en/"> <i>Tsinghua University</i></strong></a></p>
-      <p> MS, Data Science and Information Technology </p>
-    </td>
-  </tr>
+                            <tr>
+                                <td
+                                    style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
+                                    <img src="images/GT_logo.png" width="70">
+                                </td>
+                                <td width="75%" valign="center">
+                                    <p><strong>Aug. 2024 - Present, <a href="https://www.gatech.edu/"> <i>Georgia
+                                                    Institute of Technology</i></strong></a></p>
+                                    <p> PhD, Computer Science </p>
+                                </td>
+                            </tr>
 
-    <tr>
-    <td style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
-      <img src="images/uestc.png" width="70"></td>
-    <td width="75%" valign="center">
-      <p><strong>Aug. 2017 - June. 2021, <a href="https://en.uestc.edu.cn/"> <i> University of Electronic Science and Technology of China</i>,</strong></a></p>
-      <p> BE, Internet Security, GPA: 3.93/4.0. </p>
-    </td>
-  </tr>
-		
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-    <tr>
-      <td>
-        <heading>Awards And Honors</heading>
-        <p>Tsinghua University Graduate School Comprehensive Scholarship * 2 (2021-2022, 2022-2023, First prize, <strong>Top 3%</strong>)</p>
-        <p>Outstanding Graduates of Sichuan Province (2021, <strong>Top 5%</strong>)</p>
-        <p>Outstanding Students Scholarship, Golden award in UESTC (2021, <strong>Top 3%</strong>)</p>
-        <p>UESTC First-class Scholarship * 3 (2017-2018, 2018-2019, 2019-2020, <strong>Top 10% </strong>)</p>
-      </td>
-    </tr>
-    </tbody>
-    
-  </table>
+                            <tr>
+                                <td
+                                    style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
+                                    <img src="images/tsinghua.png" width="70">
+                                </td>
+                                <td width="75%" valign="center">
+                                    <p><strong>Aug. 2021 - June. 2024, <a href="https://www.tsinghua.edu.cn/en/">
+                                                <i>Tsinghua University</i></strong></a></p>
+                                    <p> MS, Data Science and Information Technology </p>
+                                </td>
+                            </tr>
 
-    </tbody></table>
-    <table style="width:35%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:middle;font-size:small;">
-            Last updated: 2024/10. This awesome template is adapted from <a href="https://github.com/jonbarron/website">here</a>.
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-    
-  </td>
-</tr>
-  </table>
-	
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=T6bBL6_gt1fooecK_7eEsC9vCD_Osq1XiudhWPa19hw&cl=ffffff&w=a"></script>
+                            <tr>
+                                <td
+                                    style="padding:0px;width:25%;vertical-align:middle;text-align:right;padding-right:50px;">
+                                    <img src="images/uestc.png" width="70">
+                                </td>
+                                <td width="75%" valign="center">
+                                    <p><strong>Aug. 2017 - June. 2021, <a href="https://en.uestc.edu.cn/"> <i>
+                                                    University of Electronic Science and Technology of
+                                                    China</i>,</strong></a></p>
+                                    <p> BE, Internet Security, GPA: 3.93/4.0. </p>
+                                </td>
+                            </tr>
+
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <heading>Awards And Honors</heading>
+                                            <p>Tsinghua University Graduate School Comprehensive Scholarship * 2
+                                                (2021-2022, 2022-2023, First prize, <strong>Top 3%</strong>)</p>
+                                            <p>Outstanding Graduates of Sichuan Province (2021, <strong>Top 5%</strong>)
+                                            </p>
+                                            <p>Outstanding Students Scholarship, Golden award in UESTC (2021,
+                                                <strong>Top 3%</strong>)
+                                            </p>
+                                            <p>UESTC First-class Scholarship * 3 (2017-2018, 2018-2019, 2019-2020,
+                                                <strong>Top 10% </strong>)
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </tbody>
+                    </table>
+                    <table
+                        style="width:35%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:0px">
+                                    <br>
+                                    <p style="text-align:middle;font-size:small;">
+                                        Last updated: 2026/01. This awesome template is adapted from <a
+                                            href="https://github.com/jonbarron/website">here</a>.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+    </table>
+
+    <script type="text/javascript" id="clustrmaps"
+        src="//clustrmaps.com/map_v2.js?d=T6bBL6_gt1fooecK_7eEsC9vCD_Osq1XiudhWPa19hw&cl=ffffff&w=a"></script>
 
 </body>
 
